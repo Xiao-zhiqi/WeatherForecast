@@ -1,7 +1,13 @@
 # WeatherForecast
 天气预报程序（鸿蒙）
-天气预报程序（鸿蒙）
+
 本文将聚焦 HarmonyOS 天气应用主页面的核心模块，从功能设计与实现逻辑出发，逐一拆解各模块的作用与交互流程，帮助开发者清晰理解天气应用的核心架构与业务逻辑。
+
+天气预报程序（鸿蒙）界面演示：
+<img width="521" height="928" alt="image" src="https://github.com/user-attachments/assets/a7c9ad5e-1768-45ae-915f-e5c406970a70" />
+<img width="406" height="912" alt="image" src="https://github.com/user-attachments/assets/f3802943-9083-44d1-a1ab-180075b2f0b9" />
+<img width="490" height="1018" alt="image" src="https://github.com/user-attachments/assets/a8d34f51-4a17-4e64-b24d-81c87e5a64d6" />
+<img width="455" height="914" alt="image" src="https://github.com/user-attachments/assets/88d19c3b-863a-4623-93b9-a8768211c686" />
 
 一、页面核心状态管理模块
 状态管理是页面交互的基础，该模块通过 @State 装饰器定义关键变量，实现城市数据、天气信息、页面交互状态的动态管理，确保数据与视图同步更新。
