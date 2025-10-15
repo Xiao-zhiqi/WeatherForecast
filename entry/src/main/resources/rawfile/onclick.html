@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<script>
+    function onImageClick1() {
+      try {
+        // 创建一个表格形式的内容字符串
+        const tableContent = `<table>
+          <tr><td><button style="color: #ff484646">删除当前城市天气信息</button></td></tr>
+          <tr><td><button style="color: #ff484646">反馈天气</button></td></tr>
+        </table>`;
+
+        promptAction.showDialog({
+          title: '',
+          message: ``,
+          content: tableContent
+        }).then(data => {
+          if (data.index === 0) {
+            AlertDialog.show({
+              title: "删除",
+              message: `你确定要删除当前城市天气信息吗？`,
+              confirm: {
+                value: "确定",
+                action: () => {
+                  // 删除操作的逻辑可以在这里添加
+                  console.log('执行删除操作');
+                }
+              }
+            });
+          }
+        });
+      } catch (error) {
+        console.error(`Error: ${error}`);
+      }
+    }
+</script>
+
+</body>
+
+</html>
